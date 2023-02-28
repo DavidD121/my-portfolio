@@ -1,70 +1,185 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <!-- PROJECT SHIELDS -->
 
-## Available Scripts
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-In the project directory, you can run:
+  <!-- PROJECT LOGO -->
 
-### `npm start`
+  <br />
+  <div align="center">
+    <a href="https://github.com/mdyeates/react-portfolio">
+      <img src="src/images/logo.svg" alt="Logo" width="200" height="200">
+    </a>
+    <h3 align="center">My React Portfolio</h3>
+    <p align="center">
+    <br/>
+This portfolio application was built using React and is designed to showcase my projects. It features a dynamic and visually appealing layout. <br/>
+      <br/>
+      Built by: Michael Yeates
+      <br/>
+      <br/>
+      <a href="https://github.com/mdyeates/react-portfolio"><strong>Explore the docs »</strong></a>
+      <br/>
+      <br/>
+      <a href="https://mdyeates.github.io/react-portfolio/">View Live Website</a>
+      ·
+      <a href="https://github.com/mdyeates/react-portfolio/issues">Report Bug</a>
+      ·
+      <a href="https://github.com/mdyeates/react-portfolio/issues">Request Feature</a>
+    </p>
+  </div>
+  
+  <!-- TABLE OF CONTENTS -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <details>
+    <summary>Table of Contents</summary>
+    <ol>
+      <li>
+        <a href="#about-the-project">About The Project</a>
+        <ul>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#built-with">Built With</a></li>
+          <li><a href="#description">Description</a></li>
+        </ul>
+      </li>
+      <li>
+          <a href="#getting-started">Getting Started</a>
+        <ul>
+          <li><a href="#prerequisites">Prerequisites</a></li>
+          <li><a href="#installation">Installation</a></li>
+        </ul>
+      </li>
+      <li>
+          <a href="#usage">Usage</a>
+        <ul>
+          <li><a href="#mobile-responsive">Mobile Responsive</a></li>
+        </ul>
+      </li>
+      <li><a href="#license">License</a></li>
+      <li><a href="#questions">Questions</a></li>
+    </ol>
+  </details>
+  
+  <!-- ABOUT THE PROJECT -->
+  
+  ## About The Project
+  
+  ### Photos
+  
+  [![My React Portfolio Screen Shot][product-screenshot]](https://mdyeates.github.io/react-portfolio/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![My React Portfolio Screen Shot][product-screenshot2]](https://mdyeates.github.io/react-portfolio/)
 
-### `npm test`
+[![My React Portfolio Screen Shot][product-screenshot3]](https://mdyeates.github.io/react-portfolio/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![My React Portfolio Screen Shot][product-screenshot4]](https://mdyeates.github.io/react-portfolio/)
 
-### `npm run build`
+  <p align="right"><a href="#readme-top">back to top</a></p>
+  
+  ### Built With
+  
+  - ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=React&logoColor=61DAFB)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <p align="right"><a href="#readme-top">back to top</a></p>
+  
+  ### Description
+  
+  This is the initial version of my portfolio website, built with React. It presents a comprehensive showcase of my projects. The design places a strong emphasis on a mobile-first approach, delivering a professional and polished look through the use of a carefully chosen color palette.
+  
+  <p align="right"><a href="#readme-top">back to top</a></p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- GETTING STARTED -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/mdyeates/react-portfolio.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-## Learn More
+  <p align="right"><a href="#readme-top">back to top</a></p>
+  
+  <!-- USAGE EXAMPLES -->
+  
+  ## Usage  
+  ### Mobile Responsive
+  
+  - As demonstrated in the photos below, this application is designed to be responsive and adjust seamlessly to fit various screen sizes
+  
+    [![Responsiveness Screenshot][responsive-screenshot]](https://mdyeates.github.io/react-portfolio/)
+    
+    [![Responsiveness Screenshot][responsive-screenshot2]](https://mdyeates.github.io/react-portfolio/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    [![Responsiveness Screenshot][responsive-screenshot3]](https://mdyeates.github.io/react-portfolio/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    [![Responsiveness Screenshot][responsive-screenshot4]](https://mdyeates.github.io/react-portfolio/)
 
-### Code Splitting
+  <p align="right"><a href="#readme-top">back to top</a></p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  <!-- LICENSE -->
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
-### Making a Progressive Web App
+  <p align="right"><a href="#readme-top">back to top</a></p>
+  
+  
+<!-- QUESTIONS -->
+  
+## Questions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:michael-yeates@outlook.com">michael-yeates@outlook.com</a>
 
-### Advanced Configuration
+<a href="https://www.linkedin.com/in/mdyeates/">LinkedIn</a> | <a href="https://github.com/mdyeates/">GitHub</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Project Link: [https://github.com/mdyeates/react-portfolio](https://github.com/mdyeates/react-portfolio)
 
-### Deployment
+  <p align="right"><a href="#readme-top">back to top</a></p>
+  
+  <!-- MARKDOWN LINKS & IMAGES -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[contributors-shield]: https://img.shields.io/github/contributors/mdyeates/react-portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/mdyeates/react-portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mdyeates/react-portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/mdyeates/react-portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/mdyeates/react-portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/mdyeates/react-portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mdyeates/react-portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/mdyeates/react-portfolio/issues
+[license-shield]: https://img.shields.io/github/license/mdyeates/react-portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/mdyeates/react-portfolio/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/mdyeates
 
-### `npm run build` fails to minify
+  <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[product-screenshot]: src/images/screenshot.png
+[product-screenshot2]: src/images/screenshot2.png
+[product-screenshot3]: src/images/screenshot3.png
+[product-screenshot4]: src/images/screenshot4.png
+[responsive-screenshot]: src/images/mobile-screenshot.png
+[responsive-screenshot2]: src/images/mobile-screenshot2.png
+[responsive-screenshot3]: src/images/mobile-screenshot3.png
+[responsive-screenshot4]: src/images/mobile-screenshot4.png
