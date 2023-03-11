@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/davidd121.github.io/my-portfolio/static/css/main.21ea67ac.css",
+    "main.js": "/davidd121.github.io/my-portfolio/static/js/main.5715454e.js",
+    "static/media/david_imange.jpeg": "/davidd121.github.io/my-portfolio/static/media/david_imange.898fbce82a115a326d76.jpeg",
+    "static/media/michael-yeates-resume.pdf": "/davidd121.github.io/my-portfolio/static/media/michael-yeates-resume.51eb6c0ce54b6476d245.pdf",
+    "index.html": "/davidd121.github.io/my-portfolio/index.html",
+    "static/media/close.svg": "/davidd121.github.io/my-portfolio/static/media/close.a591c5268e7cbcfeb569c6afea5745fc.svg",
+    "static/media/open.svg": "/davidd121.github.io/my-portfolio/static/media/open.e6bd41ec79183186fdb132e92b58c1de.svg",
+    "main.21ea67ac.css.map": "/davidd121.github.io/my-portfolio/static/css/main.21ea67ac.css.map",
+    "main.5715454e.js.map": "/davidd121.github.io/my-portfolio/static/js/main.5715454e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21ea67ac.css",
+    "static/js/main.5715454e.js"
+  ]
+}
