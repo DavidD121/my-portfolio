@@ -1,30 +1,26 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import landingImage from "../../images/me.svg";
 import SocialIcons from "../../components/SocialIcons";
 
 const Landing = ({ name, tagline }) => {
   const styles = {
     landing: {
       height: "calc(100% - 93px)",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+      display: "flex"
     },
 
-    landingImage: {
-      position: "absolute",
-      bottom: "0",
-      opacity: "0.3",
-      mixBlendMode: "lighten",
-      height: "80%",
-    },
+    // landingButtons: {
+    //   position: "absolute",
+    //   bottom: "0",
+    //   opacity: "0.3",
+    //   mixBlendMode: "lighten",
+    //   height: "80%",
+    // },
 
     textContainer: {
       display: "flex",
       flexDirection: "column",
       letterSpacing: "1px",
-      textAlign: "center",
       zIndex: "1",
       color: "#fff",
       textShadow: "1px 1px 3px #000",
@@ -33,8 +29,7 @@ const Landing = ({ name, tagline }) => {
     name: {
       color: "#fff",
       fontWeight: "700",
-      marginTop: "-100px",
-      paddingBottom: "28px",
+      marginTop: "-100px"
     },
   };
 
@@ -63,20 +58,22 @@ const Landing = ({ name, tagline }) => {
           animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          {tagline}
+          Howdy! Thanks for checking out my website. Click to learn more about me and and see what I'm up to
         </motion.p>
       </div>
-      <div className="image-container">
-        <motion.img
-          className="landingImage"
+      <div className="button-container">
+        <motion.div
+          className="landingButtons"
           ref={ref}
-          initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 0.4 } : { y: "10vw", opacity: 0 }}
+          initial={{ x: "10vw", opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          style={styles.landingImage}
-          src={landingImage}
-          alt=""
-        />
+          style={styles.landingButtons}
+        >
+          <a href="/about"><button className="landing-button">About Me</button></a>
+          <a href="/projects"><button className="landing-button">Projects</button></a>
+          <a href="/contact"><button className="landing-button">Contact Info</button></a>
+        </motion.div>
       </div>
 
       <SocialIcons />

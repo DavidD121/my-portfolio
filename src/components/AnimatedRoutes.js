@@ -23,7 +23,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
           />
         }
       />
-      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/projects" element={<Portfolio />} />
       <Route
         path="/contact"
         element={
