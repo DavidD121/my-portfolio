@@ -9,21 +9,37 @@
   padding-bottom: var(--spacing);
 }
 
-.projectCard {
-  color: white;
-  border-radius: 3px;
+.project {
+  width: 100vw;
   margin-bottom: 20px;
+}
+
+.projectCard {
+  padding: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease-in-out;
-  flex-direction: column;
-  padding: 0 !important;
   cursor: pointer;
+  height: 350px;
+}
+
+.projectCard .project-image{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.accordian {
+  margin-top: 0;
 }
 
 .row {
   padding: 0;
   margin: 0;
+  justify-content: space-evenly;
+
 }
 
 .textWrap {
@@ -33,12 +49,6 @@
 
 .projectLink {
   text-decoration: none;
-}
-
-.imageContainer img {
-  height: 12em;
-  margin-top: 25px;
-  transition: all 1.3s ease-in-out;
 }
 
 .tech {
@@ -87,8 +97,13 @@
   color: white;
 }
 
-.projectDescription {
-  margin-bottom: 10px;
+/* .projectDescription {
+  margin-left: 15px;
+  margin-right: 15px;
+} */
+
+.btn {
+  margin-right: 15px;
 }
 
 /* --- MEDIA QUEIRES --- */
@@ -96,13 +111,17 @@
 @media (min-width: 750px) {
   .projectCard {
     flex-direction: row;
-    padding: var(--sm-spacing) !important;
     height: 350px;
   }
 
   .portfolio {
     padding-left: var(--spacing);
     padding-right: var(--spacing);
+  }
+
+  .project {
+    width: 40vw;
+    margin: 10px;
   }
 
   .imageContainer {
@@ -122,8 +141,8 @@
     opacity: 0;
   }
 
-  .projectCard:hover .imageContainer img {
-    scale: 1.4;
+  .projectCard:hover {
+    padding: 0;
   }
 
   .imageContainer {

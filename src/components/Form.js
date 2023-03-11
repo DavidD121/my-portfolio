@@ -2,7 +2,15 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+var accessKey = "";
+fetch('web3form-access-key.txt')
+  .then(response => response.text()) 
+  .then(textString => {
+      accessKey =  textString;
+  });
+
 const Form = () => {
+  
   const [ref, inView] = useInView({
     threshold: 0,
     triggerOnce: true,
@@ -15,7 +23,7 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: "4f412a8f-0a11-4ba9-8e37-e12661f36602",
+    access_key: accessKey,
   });
 
   const handleChange = (e) => {
@@ -48,6 +56,7 @@ const Form = () => {
           subject: "",
           message: "",
         });
+        console.log(formData);
         setTimeout(() => {
           setSuccess(false);
         }, 3000);
@@ -59,7 +68,7 @@ const Form = () => {
     <motion.form
       action=""
       ref={ref}
-      className="contactForm"
+      className="contactForm" 
       initial={{ x: "-10vw", opacity: 0 }}
       animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}

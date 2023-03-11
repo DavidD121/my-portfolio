@@ -1,14 +1,48 @@
 /* --- MOBILE STYLES --- */
 
-.landing .name {
-  font-size: 48px;
-}
-.landing .description {
-  font-size: 26px;
+.landing {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.landingImage {
-  right: 0px;
+.textContainer {
+  text-align: center;
+  margin: 10px;
+}
+
+.landing .name {
+  font-size: 36px;
+  padding-bottom: 28px;
+}
+
+.landing .description {
+  font-size: 18px;
+}
+
+.landingButtons {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  bottom: 100px;
+}
+
+.landing-button { 
+  background-color: var(--hl-color);
+  color: white;
+  height: 75px;
+  width: 300px;
+  font-size: 26px;
+  border-radius: 5px;
+  transition: all 200ms ease-out;
+}
+
+.landing-button:hover {
+  background-color: #00aaff;
+  cursor: pointer;
 }
 
 /* .landing .socialIcons {
@@ -25,6 +59,29 @@
 /* --- MEDIA QUERIES --- */
 
 @media (min-width: 750px) {
+  .landing {
+    flex-direction: row;
+    margin-left: 75px;
+    justify-content: space-evenly;
+  }
+
+  .textContainer {
+    max-width: 590px;
+    text-align: left;
+  }
+
+  .landing .name {
+    font-size: 48px;
+  }
+  
+  .landing .description {
+    font-size: 26px;
+  }
+
+  .landing-button {
+    justify-content: space-between;
+  }
+
   .landing .name {
     font-size: 70px;
   }
@@ -33,12 +90,16 @@
     font-size: 32px;
   }
 
+  .textContainer {
+    text-align: left;
+  }
+
   .landingImage {
     bottom: 0;
     right: 80px;
   }
 
   .landing .socialIcons {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
