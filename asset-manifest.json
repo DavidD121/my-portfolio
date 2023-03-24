@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b31cbf6f.css",
-    "main.js": "/my-portfolio/static/js/main.08e53028.js",
-    "static/media/david_imange.jpeg": "/my-portfolio/static/media/david_imange.898fbce82a115a326d76.jpeg",
-    "static/media/michael-yeates-resume.pdf": "/my-portfolio/static/media/michael-yeates-resume.51eb6c0ce54b6476d245.pdf",
-    "index.html": "/my-portfolio/index.html",
-    "static/media/close.svg": "/my-portfolio/static/media/close.a591c5268e7cbcfeb569c6afea5745fc.svg",
-    "static/media/open.svg": "/my-portfolio/static/media/open.e6bd41ec79183186fdb132e92b58c1de.svg",
-    "main.b31cbf6f.css.map": "/my-portfolio/static/css/main.b31cbf6f.css.map",
-    "main.08e53028.js.map": "/my-portfolio/static/js/main.08e53028.js.map"
+    "main.css": "/static/css/main.b31cbf6f.css",
+    "main.js": "/static/js/main.cd11f297.js",
+    "static/media/david_imange.jpeg": "/static/media/david_imange.898fbce82a115a326d76.jpeg",
+    "static/media/michael-yeates-resume.pdf": "/static/media/michael-yeates-resume.51eb6c0ce54b6476d245.pdf",
+    "index.html": "/index.html",
+    "static/media/close.svg": "/static/media/close.a591c5268e7cbcfeb569c6afea5745fc.svg",
+    "static/media/open.svg": "/static/media/open.e6bd41ec79183186fdb132e92b58c1de.svg",
+    "main.b31cbf6f.css.map": "/static/css/main.b31cbf6f.css.map",
+    "main.cd11f297.js.map": "/static/js/main.cd11f297.js.map"
   },
   "entrypoints": [
     "static/css/main.b31cbf6f.css",
-    "static/js/main.08e53028.js"
+    "static/js/main.cd11f297.js"
   ]
 }
