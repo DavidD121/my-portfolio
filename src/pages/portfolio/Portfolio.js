@@ -14,6 +14,7 @@ const Portfolio = () => {
         github={project.github}
         deployed={project.deployed}
         description={project.description}
+        media={project.media}
       />
     ));
 

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { NavLink } from "react-router-dom";
 import SocialIcons from "../../components/SocialIcons";
 
 const Landing = ({ name, tagline }) => {
@@ -70,9 +71,15 @@ const Landing = ({ name, tagline }) => {
           transition={{ duration: 1, ease: "easeInOut" }}
           style={styles.landingButtons}
         >
-          <a href="/about"><button className="landing-button">About Me</button></a>
-          <a href="/projects"><button className="landing-button">Projects</button></a>
-          <a href="/contact"><button className="landing-button">Contact Info</button></a>
+          <NavLink to="/about">
+            <button className="landing-button">About Me</button>
+          </NavLink>
+          <NavLink to="/projects">
+            <button className="landing-button">Projects</button>
+          </NavLink>
+          <NavLink to="/contact">
+            <button className="landing-button">Contact Info</button>
+          </NavLink>
         </motion.div>
       </div>
 
