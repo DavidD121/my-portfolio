@@ -6,14 +6,14 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const Project = ({ title, image, color, id, github, deployed, description }) => {
+const Project = ({ title, image, color, id, github, deployed, description, media }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
   const variants = {
-    hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
+    hidden: { x: id % 2 === 0 ? "-10vw" : "10vw", opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
   
@@ -42,13 +42,26 @@ const Project = ({ title, image, color, id, github, deployed, description }) => 
       <Accordion expanded={showAccordian} disableGutters={true} className="accordian" onClick={toggleAccordian} sx={{"& .MuiPaper-root-MuiAccordion-root.Mui-expanded": {margin: 0}}}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>{title}</AccordionSummary>
         <AccordionDetails>
-          <p className="projectDescription">{description}</p>
-          <button className="btn" onClick={() => (window.location.href = github)}>
-            GitHub Repo
-          </button>
-          <button className="btn" onClick={() => (window.location.href = deployed)}>
-            Live Link
-          </button>
+          {media ? 
+            <div>
+              <p className="projectDescription with-video">{description}</p>
+              <video className="video" controls > 
+                <source src={media} type="video/mp4"/>
+              </video>
+            </div> 
+            : <p className="projectDescription">{description}</p>
+          }
+          {github ? 
+            <button className="btn" onClick={() => (window.location.href = github)}>
+              GitHub Repo
+            </button> : ""
+          }
+
+          {deployed ? 
+            <button className="btn" onClick={() => (window.location.href = deployed)}>
+              Live Link
+            </button> : ""
+          }
         </AccordionDetails>
       </Accordion>
     </motion.div>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
 
@@ -23,7 +22,10 @@ const NavLinks = () => {
           About
         </NavLink>
         <NavLink to="/projects" onClick={() => setIsMenuOpen(false)}>
-          Portfolio
+          Projects
+        </NavLink>
+        <NavLink to="/resume" onClick={() => setIsMenuOpen(false)}>
+          Resume
         </NavLink>
         <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
           Contact
