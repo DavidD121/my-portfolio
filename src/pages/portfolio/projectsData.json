@@ -7,17 +7,17 @@
     "github": "",
     "deployed": "",
     "bgcolor": "#26489F",
-    "id": "8"
+    "id": "9"
   },
   {
     "title": "Educational Brain-Computer Interface Browser Extension",
     "image": "./projectImages/BCI-browser-extension.png",
     "description": "A Chrome extension which communicates with a Python Flask API to retrieve and visualize brain data. The extension was designed to bridge the gap between brain data and educational platforms to enable the creation of BCIs that can enhance education. Created a prototype for a hint system that predicted when the user was confused during an online problem set and provided hint prompts to assist the user. The confusion predictions were based on readings from an fNIRS neuroimaging cap which were processed through a trained machine learning model.",
     "media": "",
-    "github": "",
+    "github": "https://github.com/WPIHCILab/BCI-Chrome-Extension",
     "deployed": "",
     "bgcolor": "#f7ee88",
-    "id": "7"
+    "id": "8"
   },
   {
     "title": "Environment Mapping and Pathfinding Robot",
@@ -27,7 +27,7 @@
     "github": "",
     "deployed": "",
     "bgcolor": "#5B6C6A",
-    "id": "6"
+    "id": "7"
   },
   {
     "title": "Ball Sorting Robotic Arm",
@@ -37,7 +37,7 @@
     "github": "",
     "deployed": "",
     "bgcolor": "#ef485b",
-    "id": "5"
+    "id": "6"
   },
   {
     "title": "Object Delivery Robot",
@@ -47,16 +47,26 @@
     "github": "",
     "deployed": "",
     "bgcolor": "#fec401",
-    "id": "4"
+    "id": "5"
   },
   {
     "title": "BrainEx: Web-based Brain Data Analysis Tool",
     "image": "./projectImages/brainex.png",
     "description": "Maintained codebase and developed features for a web-based interface to analyze time-series brain data. BrainEx is written in React with a Django backend, my contributions include the ability to save and load queries in similarity searches, a queueing system for preprocessing datasets, along with general bugfixes and quality of life improvements.",
     "media": "",
-    "github": "",
+    "github": "https://github.com/WPIHCILab/BrainEX-Frontend",
     "deployed": "",
     "bgcolor": "#26489F",
+    "id": "4"
+  },
+  {
+    "title": "Decision Making Web Application",
+    "image": "./projectImages/decision-app.png",
+    "description": "Created with a team of 4 for WPI's software engineering course. We built an AWS web application focused on helping teams make decisions. On this project, I focused on the backend portion, designing a maintaining the database and writing AWS Lambda functions in Java which retrieved requests and modified the database. I was specifically responsible for creating the functionality to create and login users, and approve and delete \"choices\" (ie a decision that a team makes, such as \"what is your favorite flavor of ice cream?\"),",
+    "media": "",
+    "github": "https://github.com/DavidD121/CS3733-Group-Project",
+    "deployed": "",
+    "bgcolor": "#211A1E",
     "id": "3"
   },
   {
@@ -72,7 +82,7 @@
   {
     "title": "2423 Kwarqs: High School First Robotics Team",
     "image": "./projectImages/2423Kwarqs.JPG",
-    "description": "Pretty much my professional origin story. Was the lead programmer for the Watertown High School Robotics team, where I first learned about robotics and built my foundational knowledge and passion in computer science. Was responsible for writing state machines for robot control, as well as creating interfaces to create intuitive control schemes which won our team the Innovation in Control and Design award is 2019's competition. Also was responsible for helping teach new members and participating in fundraising and promotional events.",
+    "description": "Pretty much my origin story. Was the lead programmer for the Watertown High School Robotics team, where I first learned about robotics and built my foundational knowledge and passion in computer science. Was responsible for writing state machines for robot control, as well as creating interfaces to create intuitive control schemes which won our team the Innovation in Control and Design award in 2019's competition. Also was responsible for helping teach new members and participating in fundraising and promotional events.",
     "media": "",
     "github": "",
     "deployed": "",
