@@ -13,7 +13,7 @@ const Project = ({ title, image, color, id, github, deployed, description, media
   });
 
   const variants = {
-    hidden: { x: id % 2 === 0 ? "-10vw" : "10vw", opacity: 0 },
+    hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
   
