@@ -41,7 +41,7 @@ const Landing = ({ name, tagline }) => {
 
   return (
     <section className="landing" style={styles.landing}>
-      <div className="textContainer" style={styles.textContainer}>
+      <div className="text-container" style={styles.textContainer}>
         <motion.h1
           className="name"
           style={styles.name}
@@ -64,7 +64,7 @@ const Landing = ({ name, tagline }) => {
       </div>
       <div className="button-container">
         <motion.div
-          className="landingButtons"
+          className="landing-buttons"
           ref={ref}
           initial={{ x: "10vw", opacity: 0 }}
           animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}

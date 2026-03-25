@@ -1,5 +1,5 @@
 
-import aboutMeImg from "../images/david_imange.jpeg";
+import aboutMeImg from "../images/iceland2.jpeg";
 import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
@@ -32,7 +32,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>Software Engineer and robot enthusiast</h5>
+            <h5>Full Stack Software Engineer and Robotics/AI Enthusiast</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>

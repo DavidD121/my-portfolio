@@ -1,37 +1,63 @@
 [
   {
     "title": "Haptic VR Gloves",
-    "image": "./projectImages/vr-gloves.png",
-    "description": "Virtual reality gloves designed to track individual finger positions, provide force-feedback, and simulate sensations of touch using electrotactile actuators. The gloves are based off of the open source LucidVR, but were designed to be more compact, easier to assemble, and add electrotactile feedback.\n\n My contributions include designing and doing sensor analysis for a custom magnetic encoder for linear position sensing of the fingers, writing firmware, and creating test environments in Unity.",
-    "media": "",
-    "github": "",
+    "image": "./projectImages/vr-gloves.jpg",
+    "sklls": "C, C++, Python, Unity",
+    "description": "Virtual reality gloves designed to track individual finger positions, provide force-feedback. The gloves are based off of the open source LucidVR, but were redesigned to be more compact, easier to assemble, and add force inputs to enable closed-loop variable force feedback.\n\n My contributions include designing and doing sensor analysis for a custom magnetic encoder for linear position sensing of the fingers, writing firmware, and creating test environments in Unity.",
+    "media": "./projectImages/haptic-vr-glove-demo.mp4",
+    "github": "https://github.com/torn8to/HAPTIC-VR-GLOVE",
     "deployed": "",
     "bgcolor": "#26489F",
-    "id": "9"
+    "id": "11"
+  },
+  {
+    "title": "VR Gloves Test Software",
+    "image": "./projectImages/vr-glove-test-interface.png",
+    "sklls": "Node.js, Three.js Electron, JavaScript, HTML, CSS, Sass",
+    "description": "Testing interface for LucidGloves, an open-source virtual reality glove. Reads serial input to visualize finger movements in 3D using Three.js. Runs on desktop using Electron and Node.js.",
+    "media": "",
+    "github": "https://github.com/DavidD121/LucidGloves-Test-Interface",
+    "deployed": "",
+    "bgcolor": "#242425",
+    "id": "10"
   },
   {
     "title": "Educational Brain-Computer Interface Browser Extension",
     "image": "./projectImages/BCI-browser-extension.png",
-    "description": "A Chrome extension which communicates with a Python Flask API to retrieve and visualize brain data. The extension was designed to bridge the gap between brain data and educational platforms to enable the creation of BCIs that can enhance education. Created a prototype for a hint system that predicted when the user was confused during an online problem set and provided hint prompts to assist the user. The confusion predictions were based on readings from an fNIRS neuroimaging cap which were processed through a trained machine learning model.",
+    "sklls": "Chrome Extension API, JavaScript, Node.js, HTML, CSS, Python, Flask",
+    "description": "A Chrome extension which communicates with a Python Flask API to retrieve and visualize brain data. The extension was designed to bridge the gap between brain data and educational platforms to enable the creation of BCIs that can enhance education. Created a prototype for a hint system that predicted when the user was confused during an online problem set and provided hint prompts to assist the user. The confusion predictions were based on readings from an fNIRS neuroimaging cap which were processed through a trained machine learning model. We also designed and ran pilot studies for an experiment where students completed problem sets with our visualizations and interventions to get feedback and improve the extension.",
     "media": "",
     "github": "https://github.com/WPIHCILab/BCI-Chrome-Extension",
     "deployed": "",
     "bgcolor": "#f7ee88",
-    "id": "8"
+    "id": "9"
   },
   {
     "title": "Environment Mapping and Pathfinding Robot",
     "image": "./projectImages/rbe3002-mapping.png",
+    "sklls": "ROS, Python, Numpy, SciPy",
     "description": "A robot designed to map an environment with LiDAR and navigate it using optimal A* path-finding. We used the Turtlebot kit and programmed the robot using ROS. Was responsible for writing the A* search and frontier detection algorithms to fully map an environment and navigate it efficiently.",
     "media": "./projectImages/rbe3002-robot.mp4",
     "github": "",
     "deployed": "",
     "bgcolor": "#5B6C6A",
+    "id": "8"
+  },
+  {
+    "title": "BrainEx: Web-based Brain Data Analysis Tool",
+    "image": "./projectImages/brainex.png",
+    "sklls": "React, Javascript, HTML, CSS, D3, Python, Django, Celery, Websockets",
+    "description": "Maintained codebase and developed features for a web-based interface to analyze time-series brain data. BrainEx is written in React with a Django backend, my contributions include the ability to save and load queries in similarity searches, a queueing system for preprocessing datasets, along with general bugfixes and quality of life improvements.",
+    "media": "",
+    "github": "",
+    "deployed": "",
+    "bgcolor": "#26489F",
     "id": "7"
   },
   {
     "title": "Ball Sorting Robotic Arm",
     "image": "./projectImages/rbe3001-robot.jpg",
+    "sklls": "Matlab, Forwards/Inverse Kinematics, Computer Vision",
     "description": "A robotic arm programmed in MATLAB that detects, picks up, and sorts balls by color. Computer vision was used to calculate the balls position in the workspace. Forwards and inverse kinematics were programmed to calculate the required motor positions to pickup balls.",
     "media": "./projectImages/rbe3001-robot.mp4",
     "github": "",
@@ -42,6 +68,7 @@
   {
     "title": "Object Delivery Robot",
     "image": "./projectImages/rbe2001-robot.jpg",
+    "sklls": "C++, Arduino",
     "description": "A robot designed to pick up and drop off miniature \"solar panels\" from a \"house\" and deliver it to a platform. It features a custom built gripper which uses a linear actuator and springs to support carrying heavy loads. I was responsible for writing the state machines and choreographing the motions to ensure consistent and smooth pick-ups and drop-offs.",
     "media": "./projectImages/rbe2001-robot.mp4",
     "github": "",
@@ -50,28 +77,31 @@
     "id": "5"
   },
   {
-    "title": "BrainEx: Web-based Brain Data Analysis Tool",
-    "image": "./projectImages/brainex.png",
-    "description": "Maintained codebase and developed features for a web-based interface to analyze time-series brain data. BrainEx is written in React with a Django backend, my contributions include the ability to save and load queries in similarity searches, a queueing system for preprocessing datasets, along with general bugfixes and quality of life improvements.",
+    "title": "Prototype VR Physics Lab",
+    "image": "./projectImages/VRLab.png",
+    "sklls": "Unity, C#, .NET, Sockets, Python",
+    "description": "Created a prototype for a VR application that guides the user through a physics lab. Created in Unity game engine, was responsible for creating the physics lab environment and interactible components for the user to create circuits with, as well as facilitating socket communication between Unity and the circuit code written in python. Created demos and quickly implemented features and adjustments based on feedback.",
     "media": "",
-    "github": "https://github.com/WPIHCILab/BrainEX-Frontend",
+    "github": "",
     "deployed": "",
-    "bgcolor": "#26489F",
+    "bgcolor": "#581681",
     "id": "4"
   },
   {
     "title": "Decision Making Web Application",
     "image": "./projectImages/decision-app.png",
-    "description": "Created with a team of 4 for WPI's software engineering course. We built an AWS web application focused on helping teams make decisions. On this project, I focused on the backend portion, designing a maintaining the database and writing AWS Lambda functions in Java which retrieved requests and modified the database. I was specifically responsible for creating the functionality to create and login users, and approve and delete \"choices\" (ie a decision that a team makes, such as \"what is your favorite flavor of ice cream?\"),",
+    "sklls": "Java, AWS, AWS Lambda, AWS API Gateway",
+    "description": "Created with a team of 4 for WPI's software engineering course. We built an AWS web application focused on helping teams make decisions. On this project, I focused on the backend portion, designing a maintaining the database and writing AWS Lambda functions in Java which retrieved requests and modified the database. I was specifically responsible for creating the functionality to create and login users, and approve and delete \"choices\" (ie a decision that a team makes, such as \"what is your favorite flavor of ice cream?\")",
     "media": "",
     "github": "https://github.com/DavidD121/CS3733-Group-Project",
-    "deployed": "",
+    "deployed": "",        
     "bgcolor": "#211A1E",
     "id": "3"
   },
   {
     "title": "Spotify Playlist Analyzer",
     "image": "./projectImages/playlist-analyzer.png",
+    "sklls": "React, Javascript, Node.js, Spotify API, Google Cloud Platform",
     "description": "My got-bored-during-quarantine project. This web app utilizes the Spotify API to analyze playlists based off of energy, positivity, dancibility, etc. You can also search for new songs for your playlists based off of these qualities. This was my first project with react, and my first stab at creating a web application (please excuse the styling lmao).",
     "media": "",
     "github": "https://github.com/DavidD121/ReactJS-Spotify-Playlist-Analyzer",
@@ -82,6 +112,7 @@
   {
     "title": "2423 Kwarqs: High School First Robotics Team",
     "image": "./projectImages/2423Kwarqs.JPG",
+    "sklls": "Python, Javascript, HTML, CSS, riot.js, OpenCV",
     "description": "Pretty much my origin story. Was the lead programmer for the Watertown High School Robotics team, where I first learned about robotics and built my foundational knowledge and passion in computer science. Was responsible for writing state machines for robot control, as well as creating interfaces to create intuitive control schemes which won our team the Innovation in Control and Design award in 2019's competition. Also was responsible for helping teach new members and participating in fundraising and promotional events.",
     "media": "",
     "github": "",

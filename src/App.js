@@ -9,7 +9,10 @@ function App() {
     email: "daviddanielian3@gmail.com",
     availability: "Open for work",
     brand:
-      "I'm a software engineer with a background in web development, robot control, and human-computer interaction. My unique background has honed my user-centered approach to problem solving and design. I am passionate about tech that makes our lives easier and creates unique experiences for people, including virtual/augmented reality, robotics, and game development.",
+      "I'm a software engineer with a background in cloud and web development, robotics, and human-computer \
+       interaction. My unique background has honed my user-centered approach to problem solving and design. \
+       I am passionate about tech that makes our lives easier and creates unique experiences for people, \
+       including AI, spacial reconstruction, virtual/augmented reality, robotics, 3D printing, and game development."
   };
 
   const darkTheme = createTheme({

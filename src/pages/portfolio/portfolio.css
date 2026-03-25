@@ -35,6 +35,12 @@
   margin-top: 0;
 }
 
+.skills {
+  color: rgb(170, 170, 170);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
 .video {
   width: 100%;
 }

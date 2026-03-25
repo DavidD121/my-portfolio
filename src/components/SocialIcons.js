@@ -9,7 +9,7 @@ const SocialIcons = () => {
   };
 
   return (
-    <div className="socialIcons" style={styles.socialIcons}>
+    <div className="social-icons" style={styles.socialIcons}>
       <a className="icon" style={styles.icon} href="https://github.com/DavidD121">
         <i className="fa-brands fa-github" aria-hidden="true" title="David Danielian's GitHub Profile"></i>
       </a>

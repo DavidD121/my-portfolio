@@ -13,6 +13,7 @@ const Portfolio = () => {
         color={project.bgcolor}
         github={project.github}
         deployed={project.deployed}
+        skills={project.sklls}
         description={project.description}
         media={project.media}
       />

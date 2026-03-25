@@ -61,11 +61,11 @@ body {
   font-size: 14px;
 }
 
-.socialIcons .icon {
+.social-icons .icon {
   color: var(--text-color);
 }
 
-.socialIcons .icon:hover {
+.social-icons .icon:hover {
   scale: 1.2;
   color: var(--hl-color);
 }

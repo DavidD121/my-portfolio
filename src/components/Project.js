@@ -6,7 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const Project = ({ title, image, color, id, github, deployed, description, media }) => {
+const Project = ({ title, image, color, id, github, deployed, skills, description, media }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -42,23 +42,25 @@ const Project = ({ title, image, color, id, github, deployed, description, media
       <Accordion expanded={showAccordian} disableGutters={true} className="accordian" onClick={toggleAccordian} sx={{"& .MuiPaper-root-MuiAccordion-root.Mui-expanded": {margin: 0}}}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>{title}</AccordionSummary>
         <AccordionDetails>
+          <p className="skills">Skills/Tech Used: {skills}</p>
           {media ? 
             <div>
+
               <p className="projectDescription with-video">{description}</p>
-              <video className="video" controls > 
+              <video className="video" controls onClick={(e) => e.stopPropagation()}> 
                 <source src={media} type="video/mp4"/>
               </video>
             </div> 
             : <p className="projectDescription">{description}</p>
           }
           {github ? 
-            <button className="btn" onClick={() => (window.location.href = github)}>
+            <button className="btn" onClick={(e) => { e.stopPropagation(); window.open(github, "_blank", "noopener,noreferrer"); }}>
               GitHub Repo
             </button> : ""
           }
 
           {deployed ? 
-            <button className="btn" onClick={() => (window.location.href = deployed)}>
+            <button className="btn" onClick={(e) => { e.stopPropagation(); window.open(deployed, "_blank", "noopener,noreferrer"); }}>
               Live Link
             </button> : ""
           }

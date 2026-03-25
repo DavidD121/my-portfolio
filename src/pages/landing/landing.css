@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.textContainer {
+.text-container {
   text-align: center;
   margin: 10px;
 }
@@ -21,7 +21,7 @@
   font-size: 18px;
 }
 
-.landingButtons {
+.landing-buttons {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -49,10 +49,9 @@
   display: none;
 } */
 
-.landing .socialIcons {
+.landing .social-icons {
   display: flex;
   position: absolute;
-  left: 50px;
   bottom: 20px;
 }
 
@@ -65,7 +64,7 @@
     justify-content: space-evenly;
   }
 
-  .textContainer {
+  .text-container {
     max-width: 590px;
     text-align: left;
   }
@@ -76,6 +75,11 @@
   
   .landing .description {
     font-size: 26px;
+  }
+
+  .landing-buttons {
+    position: relative;
+    bottom: 35px;
   }
 
   .landing-button {
@@ -90,7 +94,7 @@
     font-size: 32px;
   }
 
-  .textContainer {
+  .text-container {
     text-align: left;
   }
 
@@ -99,7 +103,7 @@
     right: 80px;
   }
 
-  .landing .socialIcons {
+  .landing .social-icons {
     flex-direction: row;
   }
 }
