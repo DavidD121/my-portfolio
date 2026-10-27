@@ -19,6 +19,8 @@ const Project = ({ title, image, color, id, github, deployed, skills, descriptio
   
   const [showAccordian, setShowAccordian] = useState(false);
 
+  const [isPortrait, setIsPortrait] = useState(false);
+
   const toggleAccordian = () => showAccordian ? setShowAccordian(false) : setShowAccordian(true);
 
   return (
@@ -46,8 +48,13 @@ const Project = ({ title, image, color, id, github, deployed, skills, descriptio
           {media ? 
             <div>
 
-              <p className="projectDescription with-video">{description}</p>
-              <video className="video" controls onClick={(e) => e.stopPropagation()}> 
+              <p className={`projectDescription with-video${isPortrait ? " portrait" : ""}`}>{description}</p>
+              <video
+                className={`video${isPortrait ? " portrait" : ""}`}
+                controls
+                onClick={(e) => e.stopPropagation()}
+                onLoadedMetadata={(e) => setIsPortrait(e.target.videoHeight > e.target.videoWidth)}
+              >
                 <source src={media} type="video/mp4"/>
               </video>
             </div> 

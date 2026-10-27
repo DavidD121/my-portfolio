@@ -117,8 +117,8 @@
 }
 
 .video {
+  display: block;
   width: calc(100%);
-  float: right;
   margin-bottom: 15px;
 }
 
@@ -130,14 +130,14 @@
 
 @media (min-width: 1000px) {
 
-  .with-video {
+  .with-video.portrait {
     width: calc(50% - 5px);
     margin-right: 5px;
     float: left;
     margin-bottom: 10px;
   }
-  
-  .video {
+
+  .video.portrait {
     width: 50%;
     float: right;
   }
