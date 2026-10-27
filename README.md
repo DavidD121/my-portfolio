@@ -10,6 +10,7 @@ npm run start
 ## Deploy
 
 ```bash
+npm run build
 firebase login
 firebase deploy
 ```
