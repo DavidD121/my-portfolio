@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -20,6 +20,11 @@ const Project = ({ title, image, color, id, github, deployed, skills, descriptio
   const [showAccordian, setShowAccordian] = useState(false);
 
   const [isPortrait, setIsPortrait] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (!showAccordian && videoRef.current) videoRef.current.pause();
+  }, [showAccordian]);
 
   const toggleAccordian = () => showAccordian ? setShowAccordian(false) : setShowAccordian(true);
 
@@ -50,6 +55,7 @@ const Project = ({ title, image, color, id, github, deployed, skills, descriptio
 
               <p className={`projectDescription with-video${isPortrait ? " portrait" : ""}`}>{description}</p>
               <video
+                ref={videoRef}
                 className={`video${isPortrait ? " portrait" : ""}`}
                 controls
                 onClick={(e) => e.stopPropagation()}
