@@ -14,7 +14,7 @@ const Resume = ({ name, tagline }) => {
   return (
     
       <section className="resume">
-        <PageHeader title="Resume" description="Last updated 3/25/2026"></PageHeader>
+        <PageHeader title="Resume" description="Last updated 10/26/2026"></PageHeader>
         <motion.div
           className="personalInfo col-12 col-lg-8"
           ref={ref}
