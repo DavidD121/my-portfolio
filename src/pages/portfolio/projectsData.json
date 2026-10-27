@@ -1,5 +1,16 @@
 [
   {
+    "title": "3D Reconstruction",
+    "image": "./projectImages/3dr-pointcloud.png",
+    "sklls": "Python, Gaussian Splatting, COLMAP, SAM, DepthAnything, GCP",
+    "description": "Built and deployed a scalable, containerized 3D spatial reconstruction pipeline written in Python and hosted in GCP. Leveraging COLMAP, SAM3, DepthAnything, and Gaussian Splatting to reconstruct and parse 3D space into useful information for progress tracking and validation on construction sites. Complete with QR code based Scaling and measurement tools.",
+    "media": "./projectImages/3dr-demo.mp4",
+    "github": "",
+    "deployed": "",
+    "bgcolor": "#c73d10",
+    "id": "12"
+  },
+  {
     "title": "Haptic VR Gloves",
     "image": "./projectImages/vr-gloves.jpg",
     "sklls": "C, C++, Python, Unity",
