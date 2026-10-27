@@ -6,14 +6,14 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const Project = ({ title, image, color, id, github, deployed, skills, description, media }) => {
+const Project = ({ title, image, color, id, github, deployed, skills, description, media, order }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
   const variants = {
-    hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
+    hidden: { x: order % 2 === 0 ? "-10vw" : "10vw", opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
   
@@ -31,7 +31,8 @@ const Project = ({ title, image, color, id, github, deployed, skills, descriptio
   return (
     <motion.div
       ref={ref}
-      className="col-sm-12 col-lg-6 project"
+      className="project"
+      style={{ order }}
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}

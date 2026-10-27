@@ -13,6 +13,32 @@
 
 /* --- ANIMATIONS --- */
 
+@keyframes scrollHintBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.scrollHint {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  margin-left: -17px;
+  color: var(--text-color);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.scrollHint.visible {
+  opacity: 0.8;
+  animation: scrollHintBounce 1.6s ease-in-out infinite;
+}
+
 @keyframes slideDown {
   0% {
     transform: translateY(0);

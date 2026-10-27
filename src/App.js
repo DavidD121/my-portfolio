@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import AnimatedRoutes from "./components/AnimatedRoutes";
+import ScrollHint from "./components/ScrollHint";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <Header />
         <AnimatedRoutes personalDetails={personalDetails} />
+        <ScrollHint />
       </ThemeProvider>
     </>
   );

@@ -14,6 +14,11 @@
   margin-bottom: 20px;
 }
 
+/* On mobile the columns dissolve so projects stack in their original order */
+.projectColumn {
+  display: contents;
+}
+
 .projectCard {
   padding: 5px;
   border-top-left-radius: 3px;
@@ -144,6 +149,15 @@
 }
 
 @media (min-width: 750px) {
+  /* beats Bootstrap's `.row > * { width: 100% }` so the two columns sit side by side */
+  .row > .projectColumn {
+    width: auto;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .projectCard {
     flex-direction: row;
     height: 350px;
